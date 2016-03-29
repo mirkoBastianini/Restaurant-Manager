@@ -1,0 +1,45 @@
+﻿<Window x:Class="RestaurantAdmin.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurantAdmin"
+        mc:Ignorable="d"
+        Title="Registration" Height="700" Width="1000" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Icons-Land-Points-Of-Interest-Restaurant-Blue.ico">
+    <Window.Background>
+        <ImageBrush ImageSource="restaurant.jpg" Opacity="0.6"/>
+    </Window.Background>
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="530
+              " Margin="10,130,0,0" VerticalAlignment="Top" Width="974">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.8">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Label x:Name="label_Copy" Content="Registration" HorizontalAlignment="Center" Margin="10,10,10,0" VerticalAlignment="Top" RenderTransformOrigin="-0.19,-0.879" Width="419" HorizontalContentAlignment="Center" FontSize="48" FontFamily="Lucida Calligraphy" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="label_Copy2" Content="Username:" HorizontalAlignment="Center" Margin="10,134,545,0" VerticalAlignment="Top" RenderTransformOrigin="-0.19,-0.879" Width="419" FontSize="32" FontFamily="Lucida Calligraphy" FontWeight="Bold" Foreground="White"/>
+            <TextBox x:Name="useradmin" HorizontalAlignment="Left" Height="40" Margin="10,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="419" FontSize="32" FontFamily="Lucida Calligraphy"/>
+            <Label x:Name="label_Copy3" Content="Password:" HorizontalAlignment="Center" Margin="10,272,545,0" VerticalAlignment="Top" RenderTransformOrigin="-0.19,-0.879" Width="419" FontSize="32" FontFamily="Lucida Calligraphy" FontWeight="Bold" Foreground="White"/>
+            <PasswordBox x:Name="passwordregister" HorizontalAlignment="Left" Margin="10,330,0,0" VerticalAlignment="Top" Height="40" Width="419" FontSize="32" FontFamily="Lucida Calligraphy"/>
+            <Button x:Name="buttonadmin" Content="Register" HorizontalAlignment="Left" Margin="817,470,0,0" VerticalAlignment="Top" Width="147" Height="50" FontSize="26.667" FontFamily="Lucida Calligraphy" Click="buttonadmin_Click"/>
+            <Label x:Name="label_Copy1" Content="Email:" HorizontalAlignment="Center" Margin="545,134,10,0" VerticalAlignment="Top" RenderTransformOrigin="-0.19,-0.879" Width="419" FontSize="32" FontFamily="Lucida Calligraphy" FontWeight="Bold" Foreground="White"/>
+            <TextBox x:Name="emailRegister" HorizontalAlignment="Left" Height="40" Margin="545,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="419" FontSize="32" FontFamily="Lucida Calligraphy"/>
+            <Label x:Name="label_Copy4" Content="Telephone:" HorizontalAlignment="Center" Margin="545,272,10,0" VerticalAlignment="Top" RenderTransformOrigin="-0.19,-0.879" Width="419" FontSize="32" FontFamily="Lucida Calligraphy" FontWeight="Bold" Foreground="White"/>
+            <TextBox x:Name="telephoneregister" HorizontalAlignment="Left" Height="40" Margin="545,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="419" FontSize="32" FontFamily="Lucida Calligraphy"/>
+            <Label x:Name="label_Copy5" Content="Address:" HorizontalAlignment="Center" Margin="11,412,544,0" VerticalAlignment="Top" RenderTransformOrigin="-0.19,-0.879" Width="419" FontSize="32" FontFamily="Lucida Calligraphy" FontWeight="Bold" Foreground="White"/>
+            <TextBox x:Name="addressregister" HorizontalAlignment="Left" Height="40" Margin="10,470,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="419" FontSize="32" FontFamily="Lucida Calligraphy"/>
+            <Label x:Name="label_Copy6" Content="Username:" HorizontalAlignment="Center" Margin="10.2,134,544.8,0" VerticalAlignment="Top" RenderTransformOrigin="-0.19,-0.879" Width="419" FontSize="32" FontFamily="Lucida Calligraphy" FontWeight="Bold" Foreground="White"/>
+            <TextBox x:Name="usernameRegister" HorizontalAlignment="Left" Height="40" Margin="10,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="419" FontSize="32" FontFamily="Lucida Calligraphy"/>
+        </Grid>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="994" Margin="0,0,-0.4,0">
+            <Button Content="Exit" Width="35" Click="Button_Click444" Background="#FFF0F0F0" RenderTransformOrigin="-1.608,-0.131" BorderBrush="{x:Null}" Height="30"/>
+            <Button Content="Info" Width="34" Click="Button_Click_3333" Background="#FFF0F0F0" Height="30">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+            </Button>
+        </Menu>
+    </Grid>
+</Window>
